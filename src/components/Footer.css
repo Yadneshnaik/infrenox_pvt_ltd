@@ -1,0 +1,98 @@
+/* General Styles for Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Container for left and right sections */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+/* Left-aligned: About Us */
+.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Right-aligned: Mail, Call, WhatsApp */
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a i {
+  margin-right: 8px;
+}
+
+.footer-links a:hover {
+  color: #ff9800;
+}
+
+/* Bottom text */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
