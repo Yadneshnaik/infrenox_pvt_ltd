@@ -1,4 +1,4 @@
-/* General Styles for Footer */
+/* General Footer Styles */
 .footer {
   background-color: #333;
   color: white;
@@ -6,67 +6,70 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   text-align: center;
 }
 
-/* Container for left and right sections */
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
   margin-bottom: 30px;
 }
 
-/* Left-aligned: About Us */
-.footer-left {
-  flex: 1;
-  text-align: left;
+/* Centered Have a Question */
+.footer-question {
+  margin-bottom: 20px;
 }
 
-.footer-left h3 {
+.footer-question h3 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  color: #fff;
 }
 
-.footer-left p {
+/* Footer Content: Location, Phone, Email */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.footer-location,
+.footer-phone,
+.footer-email {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   color: #bbb;
 }
 
-/* Right-aligned: Mail, Call, WhatsApp */
-.footer-right {
+.footer-location i,
+.footer-phone i,
+.footer-email i {
+  margin-right: 8px;
+}
+
+/* Left-aligned: Location */
+.footer-location {
+  flex: 1;
+  text-align: left;
+}
+
+/* Center-aligned: Phone */
+.footer-phone {
+  flex: 1;
+  text-align: center;
+}
+
+/* Right-aligned: Email */
+.footer-email {
   flex: 1;
   text-align: right;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.footer-links a i {
-  margin-right: 8px;
-}
-
-.footer-links a:hover {
-  color: #ff9800;
-}
-
-/* Bottom text */
+/* Bottom Text: Copyright */
 .footer-bottom {
   width: 100%;
   text-align: center;
@@ -81,18 +84,27 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .footer-container {
+  .footer-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer-left,
-  .footer-right {
+  .footer-location,
+  .footer-phone,
+  .footer-email {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
-  .footer-right {
-    text-align: center;
+  .footer-location {
+    order: 1;
+  }
+
+  .footer-phone {
+    order: 2;
+  }
+
+  .footer-email {
+    order: 3;
   }
 }

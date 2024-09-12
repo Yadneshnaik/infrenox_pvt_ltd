@@ -1,43 +1,37 @@
 import React from 'react';
 import './Footer.css';
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Left-aligned: About Us */}
-        <div className="footer-left">
-          <h3>About Us</h3>
-          <p>
-            Infrenox Pvt Ltd provides top-notch IT solutions to help your business thrive in the digital world.
-          </p>
+        {/* Centered Have a Question */}
+        <div className="footer-question">
+          <h3>Have a Question?</h3>
         </div>
 
-        {/* Right-aligned: Mail, Call, WhatsApp */}
-        <div className="footer-right">
-          <ul className="footer-links">
-            <li>
-              <a href="mailto:infrenox54@gmail.com">
-                <i className="fas fa-envelope"></i> Mail Us
-              </a>
-            </li>
-            <li>
-              <a href="tel:8237852098">
-                <i className="fas fa-phone"></i> Call Us
-              </a>
-            </li>
-            <li>
-              <a href="https://wa.me/8237852098" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-whatsapp"></i> WhatsApp Us
-              </a>
-            </li>
-          </ul>
+        <div className="footer-content">
+          {/* Left-aligned: Location */}
+          <div className="footer-location">
+            <i className="fas fa-map-marker-alt"></i> Margao, Goa
+          </div>
+
+          {/* Center-aligned: Phone */}
+          <div className="footer-phone">
+            <i className="fas fa-phone"></i> +91 8237852098
+          </div>
+
+          {/* Right-aligned: Email */}
+          <div className="footer-email">
+            <i className="fas fa-envelope"></i> infrenox54@gmail.com
+          </div>
         </div>
       </div>
 
-      {/* Bottom Text */}
+      {/* Bottom Text: Copyright */}
       <div className="footer-bottom">
-        <p>&copy; 2024 Infrenox Pvt Ltd. All rights reserved.</p>
+        <p>&copy; 2024 All rights reserved by Infrenox Pvt. Ltd.</p>
       </div>
     </footer>
   );
