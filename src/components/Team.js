@@ -13,7 +13,7 @@ const Team = () => {
       name: 'Jane Smith',
       position: 'Co-Founder',
       image: '/img/Vaidehi.jpg',
-      linkedin: '#'
+      linkedin: 'https://www.linkedin.com/in/vaidehi-naik-a67228240/'
     },
   ];
 
